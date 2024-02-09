@@ -2,11 +2,211 @@
   "version": "3",
   "packages": {
     "specifiers": {
+      "npm:@libsql/client": "npm:@libsql/client@0.4.3",
       "npm:create-hono": "npm:create-hono@0.3.2"
     },
     "npm": {
+      "@libsql/client@0.4.3": {
+        "integrity": "sha512-AUYKnSPqAsFBVWBvmtrb4dG3pQlvTKT92eztAest9wQU2iJkabH8WzHLDb3dKFWKql7/kiCqvBQUVpozDwhekQ==",
+        "dependencies": {
+          "@libsql/core": "@libsql/core@0.4.3",
+          "@libsql/hrana-client": "@libsql/hrana-client@0.5.6",
+          "js-base64": "js-base64@3.7.6",
+          "libsql": "libsql@0.2.0"
+        }
+      },
+      "@libsql/core@0.4.3": {
+        "integrity": "sha512-r28iYBtaLBW9RRgXPFh6cGCsVI/rwRlOzSOpAu/1PVTm6EJ3t233pUf97jETVHU0vjdr1d8VvV6fKAvJkokqCw==",
+        "dependencies": {
+          "js-base64": "js-base64@3.7.6"
+        }
+      },
+      "@libsql/darwin-arm64@0.2.0": {
+        "integrity": "sha512-+qyT2W/n5CFH1YZWv2mxW4Fsoo4dX9Z9M/nvbQqZ7H84J8hVegvVAsIGYzcK8xAeMEcpU5yGKB1Y9NoDY4hOSQ==",
+        "dependencies": {}
+      },
+      "@libsql/darwin-x64@0.2.0": {
+        "integrity": "sha512-hwmO2mF1n8oDHKFrUju6Jv+n9iFtTf5JUK+xlnIE3Td0ZwGC/O1R/Z/btZTd9nD+vsvakC8SJT7/Q6YlWIkhEw==",
+        "dependencies": {}
+      },
+      "@libsql/hrana-client@0.5.6": {
+        "integrity": "sha512-mjQoAmejZ1atG+M3YR2ZW+rg6ceBByH/S/h17ZoYZkqbWrvohFhXyz2LFxj++ARMoY9m6w3RJJIRdJdmnEUlFg==",
+        "dependencies": {
+          "@libsql/isomorphic-fetch": "@libsql/isomorphic-fetch@0.1.12",
+          "@libsql/isomorphic-ws": "@libsql/isomorphic-ws@0.1.5",
+          "js-base64": "js-base64@3.7.6",
+          "node-fetch": "node-fetch@3.3.2"
+        }
+      },
+      "@libsql/isomorphic-fetch@0.1.12": {
+        "integrity": "sha512-MRo4UcmjAGAa3ac56LoD5OE13m2p0lu0VEtZC2NZMcogM/jc5fU9YtMQ3qbPjFJ+u2BBjFZgMPkQaLS1dlMhpg==",
+        "dependencies": {
+          "@types/node-fetch": "@types/node-fetch@2.6.11",
+          "node-fetch": "node-fetch@2.7.0"
+        }
+      },
+      "@libsql/isomorphic-ws@0.1.5": {
+        "integrity": "sha512-DtLWIH29onUYR00i0GlQ3UdcTRC6EP4u9w/h9LxpUZJWRMARk6dQwZ6Jkd+QdwVpuAOrdxt18v0K2uIYR3fwFg==",
+        "dependencies": {
+          "@types/ws": "@types/ws@8.5.10",
+          "ws": "ws@8.16.0"
+        }
+      },
+      "@libsql/linux-arm64-gnu@0.2.0": {
+        "integrity": "sha512-1w2lPXIYtnBaK5t/Ej5E8x7lPiE+jP3KATI/W4yei5Z/ONJh7jQW5PJ7sYU95vTME3hWEM1FXN6kvzcpFAte7w==",
+        "dependencies": {}
+      },
+      "@libsql/linux-arm64-musl@0.2.0": {
+        "integrity": "sha512-lkblBEJ7xuNiWNjP8DDq0rqoWccszfkUS7Efh5EjJ+GDWdCBVfh08mPofIZg0fZVLWQCY3j+VZCG1qZfATBizg==",
+        "dependencies": {}
+      },
+      "@libsql/linux-x64-gnu@0.2.0": {
+        "integrity": "sha512-+x/d289KeJydwOhhqSxKT+6MSQTCfLltzOpTzPccsvdt5fxg8CBi+gfvEJ4/XW23Sa+9bc7zodFP0i6MOlxX7w==",
+        "dependencies": {}
+      },
+      "@libsql/linux-x64-musl@0.2.0": {
+        "integrity": "sha512-5Xn0c5A6vKf9D1ASpgk7mef//FuY7t5Lktj/eiU4n3ryxG+6WTpqstTittJUgepVjcleLPYxIhQAYeYwTYH1IQ==",
+        "dependencies": {}
+      },
+      "@libsql/win32-x64-msvc@0.2.0": {
+        "integrity": "sha512-rpK+trBIpRST15m3cMYg5aPaX7kvCIottxY7jZPINkKAaScvfbn9yulU/iZUM9YtuK96Y1ZmvwyVIK/Y5DzoMQ==",
+        "dependencies": {}
+      },
+      "@neon-rs/load@0.0.4": {
+        "integrity": "sha512-kTPhdZyTQxB+2wpiRcFWrDcejc4JI6tkPuS7UZCG4l6Zvc5kU/gGQ/ozvHTh1XR5tS+UlfAfGuPajjzQjCiHCw==",
+        "dependencies": {}
+      },
+      "@types/node-fetch@2.6.11": {
+        "integrity": "sha512-24xFj9R5+rfQJLRyM56qh+wnVSYhyXC2tkoBndtY0U+vubqNsYXGjufB2nn8Q6gt0LrARwL6UBtMCSVCwl4B1g==",
+        "dependencies": {
+          "@types/node": "@types/node@18.16.19",
+          "form-data": "form-data@4.0.0"
+        }
+      },
+      "@types/node@18.16.19": {
+        "integrity": "sha512-IXl7o+R9iti9eBW4Wg2hx1xQDig183jj7YLn8F7udNceyfkbn1ZxmzZXuak20gR40D7pIkIY1kYGx5VIGbaHKA==",
+        "dependencies": {}
+      },
+      "@types/ws@8.5.10": {
+        "integrity": "sha512-vmQSUcfalpIq0R9q7uTo2lXs6eGIpt9wtnLdMv9LVpIjCA/+ufZRozlVoVelIYixx1ugCBKDhn89vnsEGOCx9A==",
+        "dependencies": {
+          "@types/node": "@types/node@18.16.19"
+        }
+      },
+      "asynckit@0.4.0": {
+        "integrity": "sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==",
+        "dependencies": {}
+      },
+      "combined-stream@1.0.8": {
+        "integrity": "sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==",
+        "dependencies": {
+          "delayed-stream": "delayed-stream@1.0.0"
+        }
+      },
       "create-hono@0.3.2": {
         "integrity": "sha512-hJX9+wgzKb2Pd7DeaCgt9C0V3U0497hy64CFAkk1Tc0ZKkLh3X0mPnkvYDQofkb9n/B2/rYYvDnD7P5rRamFRA==",
+        "dependencies": {}
+      },
+      "data-uri-to-buffer@4.0.1": {
+        "integrity": "sha512-0R9ikRb668HB7QDxT1vkpuUBtqc53YyAwMwGeUFKRojY/NWKvdZ+9UYtRfGmhqNbRkTSVpMbmyhXipFFv2cb/A==",
+        "dependencies": {}
+      },
+      "delayed-stream@1.0.0": {
+        "integrity": "sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==",
+        "dependencies": {}
+      },
+      "detect-libc@2.0.2": {
+        "integrity": "sha512-UX6sGumvvqSaXgdKGUsgZWqcUyIXZ/vZTrlRT/iobiKhGL0zL4d3osHj3uqllWJK+i+sixDS/3COVEOFbupFyw==",
+        "dependencies": {}
+      },
+      "fetch-blob@3.2.0": {
+        "integrity": "sha512-7yAQpD2UMJzLi1Dqv7qFYnPbaPx7ZfFK6PiIxQ4PfkGPyNyl2Ugx+a/umUonmKqjhM4DnfbMvdX6otXq83soQQ==",
+        "dependencies": {
+          "node-domexception": "node-domexception@1.0.0",
+          "web-streams-polyfill": "web-streams-polyfill@3.3.2"
+        }
+      },
+      "form-data@4.0.0": {
+        "integrity": "sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==",
+        "dependencies": {
+          "asynckit": "asynckit@0.4.0",
+          "combined-stream": "combined-stream@1.0.8",
+          "mime-types": "mime-types@2.1.35"
+        }
+      },
+      "formdata-polyfill@4.0.10": {
+        "integrity": "sha512-buewHzMvYL29jdeQTVILecSaZKnt/RJWjoZCF5OW60Z67/GmSLBkOFM7qh1PI3zFNtJbaZL5eQu1vLfazOwj4g==",
+        "dependencies": {
+          "fetch-blob": "fetch-blob@3.2.0"
+        }
+      },
+      "js-base64@3.7.6": {
+        "integrity": "sha512-NPrWuHFxFUknr1KqJRDgUQPexQF0uIJWjeT+2KjEePhitQxQEx5EJBG1lVn5/hc8aLycTpXrDOgPQ6Zq+EDiTA==",
+        "dependencies": {}
+      },
+      "libsql@0.2.0": {
+        "integrity": "sha512-ELBRqhpJx5Dap0187zKQnntZyk4EjlDHSrjIVL8t+fQ5e8IxbQTeYgZgigMjB1EvrETdkm0Y0VxBGhzPQ+t0Jg==",
+        "dependencies": {
+          "@libsql/darwin-arm64": "@libsql/darwin-arm64@0.2.0",
+          "@libsql/darwin-x64": "@libsql/darwin-x64@0.2.0",
+          "@libsql/linux-arm64-gnu": "@libsql/linux-arm64-gnu@0.2.0",
+          "@libsql/linux-arm64-musl": "@libsql/linux-arm64-musl@0.2.0",
+          "@libsql/linux-x64-gnu": "@libsql/linux-x64-gnu@0.2.0",
+          "@libsql/linux-x64-musl": "@libsql/linux-x64-musl@0.2.0",
+          "@libsql/win32-x64-msvc": "@libsql/win32-x64-msvc@0.2.0",
+          "@neon-rs/load": "@neon-rs/load@0.0.4",
+          "detect-libc": "detect-libc@2.0.2"
+        }
+      },
+      "mime-db@1.52.0": {
+        "integrity": "sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==",
+        "dependencies": {}
+      },
+      "mime-types@2.1.35": {
+        "integrity": "sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==",
+        "dependencies": {
+          "mime-db": "mime-db@1.52.0"
+        }
+      },
+      "node-domexception@1.0.0": {
+        "integrity": "sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==",
+        "dependencies": {}
+      },
+      "node-fetch@2.7.0": {
+        "integrity": "sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==",
+        "dependencies": {
+          "whatwg-url": "whatwg-url@5.0.0"
+        }
+      },
+      "node-fetch@3.3.2": {
+        "integrity": "sha512-dRB78srN/l6gqWulah9SrxeYnxeddIG30+GOqK/9OlLVyLg3HPnr6SqOWTWOXKRwC2eGYCkZ59NNuSgvSrpgOA==",
+        "dependencies": {
+          "data-uri-to-buffer": "data-uri-to-buffer@4.0.1",
+          "fetch-blob": "fetch-blob@3.2.0",
+          "formdata-polyfill": "formdata-polyfill@4.0.10"
+        }
+      },
+      "tr46@0.0.3": {
+        "integrity": "sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==",
+        "dependencies": {}
+      },
+      "web-streams-polyfill@3.3.2": {
+        "integrity": "sha512-3pRGuxRF5gpuZc0W+EpwQRmCD7gRqcDOMt688KmdlDAgAyaB1XlN0zq2njfDNm44XVdIouE7pZ6GzbdyH47uIQ==",
+        "dependencies": {}
+      },
+      "webidl-conversions@3.0.1": {
+        "integrity": "sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==",
+        "dependencies": {}
+      },
+      "whatwg-url@5.0.0": {
+        "integrity": "sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==",
+        "dependencies": {
+          "tr46": "tr46@0.0.3",
+          "webidl-conversions": "webidl-conversions@3.0.1"
+        }
+      },
+      "ws@8.16.0": {
+        "integrity": "sha512-HS0c//TP7Ina87TfiPUz1rQzMhHrl/SG2guqRcTOIUYD2q8uhUdNHZYJUaQ8aTGPzCh+c6oawMKW35nFl1dxyQ==",
         "dependencies": {}
       }
     }
@@ -16,6 +216,8 @@
     "https://deno.land/x/nanoid/mod.ts": "https://deno.land/x/nanoid@v3.0.0/mod.ts"
   },
   "remote": {
+    "https://deno.land/std@0.189.0/fmt/colors.ts": "d67e3cd9f472535241a8e410d33423980bec45047e343577554d3356e1f0ef4e",
+    "https://deno.land/std@0.189.0/streams/write_all.ts": "aec90152978581ea62d56bb53a5cbf487e6a89c902f87c5969681ffbdf32b998",
     "https://deno.land/std@0.215.0/dotenv/load.ts": "587b342f0f6a3df071331fe6ba1c823729ab68f7d53805809475e486dd4161d7",
     "https://deno.land/std@0.215.0/dotenv/mod.ts": "0180eaeedaaf88647318811cdaa418cc64dc51fb08354f91f5f480d0a1309f7d",
     "https://deno.land/std@0.215.0/dotenv/parse.ts": "a49ed243bd62ec26f38614042cda4e5e3a47b18337c93b0f9f8556a5c918884b",
@@ -108,6 +310,16 @@
     "https://deno.land/x/hono@v4.0.0/utils/url.ts": "d9d307a495e7dfc6e916fbcfa74c2d8d23e8e685bddc5e6ebc9c0f784345a01a",
     "https://deno.land/x/hono@v4.0.0/validator/index.ts": "6c986e8b91dcf857ecc8164a506ae8eea8665792a4ff7215471df669c632ae7c",
     "https://deno.land/x/hono@v4.0.0/validator/validator.ts": "1a7b524292662e5219fd61a9872c2586aa23a2328800211a8fdc268b089f75f1",
+    "https://deno.land/x/logger@v1.1.5/date.ts": "09041dc83c9cddb489b875f45b07336dd894c23b9dd5b47235b94180571a2efa",
+    "https://deno.land/x/logger@v1.1.5/deps.ts": "1b09212250f8023edd69efb798874ca19bf90c4ed7cdcc1a292dc16c5bb2cf6d",
+    "https://deno.land/x/logger@v1.1.5/eol.ts": "493acd048c546fd48bcd26365d4dadf3db81ce32c4611ca5b0b19e6de9f9826a",
+    "https://deno.land/x/logger@v1.1.5/fs.ts": "7d1c7261e9f15d25c6c09df43169a4665bd9da7e2413534aa294f4b184f3fa4e",
+    "https://deno.land/x/logger@v1.1.5/interface.ts": "7bca0b861b894e914508aab1afdd7e42e598695a50a3efe9db54be8ba4ab3b0e",
+    "https://deno.land/x/logger@v1.1.5/logger.ts": "d058a83ec4ceb8582449d1a0f1ba4adce9a85d5c05b2fb1cf9920f7f896a0608",
+    "https://deno.land/x/logger@v1.1.5/stdout.ts": "f11db1f6569681fe58139b07de1f76e205bf28f6e341a50d56d3b13d95c1f6bb",
+    "https://deno.land/x/logger@v1.1.5/types.ts": "8835d0d56f500112f92b36d8f241f95bccef93f73de203f7cd86de3ab4383d80",
+    "https://deno.land/x/logger@v1.1.5/writable.ts": "bb60ba4a798a10ac1649e30598c0c346055c0dcacb8f1e9452e4f66ea6680a45",
+    "https://deno.land/x/logger@v1.1.5/writer.ts": "539ff3a1bdefef897ca1d13d387ee4d84d6491f460020454e9158076f5e09221",
     "https://deno.land/x/nanoid@v3.0.0/customAlphabet.ts": "1cfd7cfd2f07ca8d78a7e7855fcc9f59abf01ef2a127484ef94328fadf940ead",
     "https://deno.land/x/nanoid@v3.0.0/customRandom.ts": "af56e19038c891a4b4ef2be931554c27579bd407ee5bbea5cb64f6ee1347cbe3",
     "https://deno.land/x/nanoid@v3.0.0/mod.ts": "3ead610e40c58d8fdca21d5da9ec661445a2b82526e19c34d05de5f90be8a1be",
