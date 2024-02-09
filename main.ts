@@ -1,13 +1,12 @@
-/// <reference no-default-lib="true" />
-/// <reference lib="dom" />
-/// <reference lib="dom.iterable" />
-/// <reference lib="dom.asynciterable" />
-/// <reference lib="deno.ns" />
+import { Hono, Context } from "https://deno.land/x/hono@v4.0.0/mod.ts";
+import { logger } from "https://deno.land/x/hono@v4.0.0/middleware.ts";
 
-import "$std/dotenv/load.ts";
+const app = new Hono();
 
-import { start } from "$fresh/server.ts";
-import manifest from "./fresh.gen.ts";
-import config from "./fresh.config.ts";
+app.use(logger());
 
-await start(manifest, config);
+app.get("/", (c: Context) => {
+  return c.text("Hello Hono!");
+});
+
+Deno.serve(app.fetch);
